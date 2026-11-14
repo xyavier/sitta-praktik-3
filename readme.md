@@ -8,7 +8,7 @@ Repositori ini berisi *source code* untuk **Tugas 3 Pemrograman Berbasis Web** y
 
 📁 Struktur Direktori Proyek
 ```
-TUGAS3-FIX/
+
 ├── assets/
 │   ├── css/
 │   │   └── style.css
