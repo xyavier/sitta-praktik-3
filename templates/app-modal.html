@@ -1,0 +1,9 @@
+<div class="sitta-modal-backdrop" @click.self="$emit('close')" @keydown.esc="$emit('close')">
+  <section class="sitta-modal" role="dialog" aria-modal="true" :aria-label="title">
+    <header class="sitta-modal-header">
+      <h3>{{ title }}</h3>
+      <button type="button" class="sitta-icon-button" @click="$emit('close')" aria-label="Tutup">&times;</button>
+    </header>
+    <slot></slot>
+  </section>
+</div>
