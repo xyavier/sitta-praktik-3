@@ -6,45 +6,58 @@ Repositori ini berisi *source code* untuk **Tugas 3 Pemrograman Berbasis Web** y
 
 ---
 
-## 📁 Struktur Direktori Proyek
-
-```text
-TUGAS3-FIX/
-│
-├── assets/
-│   └── css/
-│       └── style.css          # Berkas penataan gaya (stylesheet) utama
-│
-├── img/                       # Direktori aset gambar pendukung topik
-│   ├── kepemimpinan.jpg
-│   ├── manajemen_keuangan.jpg
-│   ├── mikrobiologi.jpg
-│   ├── paud_perkembangan.jpeg
-│   └── pengantar_komunikasi.jpg
-│
-└── [Berkas HTML Utama]
+📁 Struktur Direktori Proyek
 ```
+TUGAS3-FIX/
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── img/
+│       ├── kepemimpinan.jpg
+│       ├── manajemen\_keuangan.jpg
+│       ├── mikrobiologi.jpg
+│       ├── paud\_perkembangan.jpeg
+│       ├── pengantar\_komunikasi.jpg
+│       ├── ut.png
+│       └── ut.png.webp
+├── data/
+│   └── dataBahanAjar.json
+├── js/
+│   ├── app.js
+│   ├── data.js
+│   ├── script.js
+│   ├── stock-app.js
+│   ├── tracking-app.js
+│   ├── components/
+│   │   ├── app-modal.js
+│   │   ├── do-tracking.js
+│   │   ├── status-badge.js
+│   │   └── stock-table.js
+│   └── services/
+│       └── api.js
+├── templates/
+│   ├── app-modal.html
+│   ├── status-badge.html
+│   ├── stock-table.html
+│   └── tracking-do.html
+├── index.html
+├── login.html
+├── dashboard.html
+├── stock.html
+└── tracking.html
 
----
+```
 
 ## 🌟 Deskripsi Proyek
 
-Proyek web ini dikembangkan untuk menyajikan berbagai topik materi edukasi dan informasi interaktif. Berdasarkan aset gambar yang tersedia, topik-topik utama dalam proyek ini meliputi:
-1. **Kepemimpinan:** Materi dan visual seputar dasar-dasar kepemimpinan.
-2. **Manajemen Keuangan:** Konten terkait pengelolaan dan perencanaan finansial.
-3. **Mikrobiologi:** Modul atau informasi edukatif mengenai ilmu mikrobiologi.
-4. **PAUD Perkembangan:** Topik seputar Pendidikan Anak Usia Dini dan tumbuh kembangnya.
-5. **Pengantar Komunikasi:** Konsep dasar ilmu komunikasi.
-
-Tampilan antarmuka web didukung oleh penataan gaya (*styling*) menggunakan file CSS eksternal (`style.css`) untuk memastikan konsistensi visual di setiap halaman.
+Proyek web ini dikembangkan untuk menyediakan sistem informasi dan manajemen bahan ajar (SITTA UT) yang interaktif. Proyek ini dilengkapi dengan fitur pengelolaan data, pelacakan (tracking), serta antarmuka modular berbasis komponen.
 
 ---
 
 ## 🚀 Cara Menjalankan Proyek
 
-1. Ekstrak atau simpan seluruh direktori proyek dalam satu folder yang sama.
-2. Pastikan struktur folder (seperti folder `assets/` dan `img/`) tidak berubah agar *path* gambar dan CSS terbaca dengan benar oleh browser.
-3. Buka file HTML utama menggunakan peramban web (*browser*) pilihan Anda (Google Chrome, Firefox, Edge, dll.).
+1. Ekstrak atau simpan seluruh direktori proyek dalam satu folder yang sama. Pastikan seluruh struktur folder dan file berada di dalam satu direktori yang utuh.
+2. Gunakan local server (seperti Live Server di VS Code) untuk menjalankan halaman utama (`index.html`) agar pemuatan skrip modul JavaScript (`js/`) dan file JSON (`data/`) dapat berjalan dengan baik di browser.
 
 ---
 *Dokumen ini dibuat untuk melengkapi dokumentasi pengerjaan tugas mata kuliah Pemrograman Berbasis Web.*
