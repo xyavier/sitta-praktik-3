@@ -1,9 +1,0 @@
-<span v-if="Number(qty) === 0" class="status-badge status-empty" title="Stok kosong">
-  <i class="fa fa-times-circle"></i> Kosong
-</span>
-<span v-else-if="Number(qty) < Number(safety)" class="status-badge status-warning" title="Stok di bawah safety stock">
-  <i class="fa fa-exclamation-triangle"></i> Menipis
-</span>
-<span v-else class="status-badge status-safe" title="Stok memenuhi safety stock">
-  <i class="fa fa-check-circle"></i> Aman
-</span>
