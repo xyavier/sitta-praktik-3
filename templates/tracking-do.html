@@ -18,7 +18,7 @@
         placeholder="Masukkan Nomor DO atau NIM"
       />
       <button type="submit" class="animated-button btn-inline">
-        <span><i class="fa fa-search"></i> Lacak</span><span></span>
+        <span><i class="fa fa-search"></i>Lacak</span><span></span>
       </button>
       <button type="button" class="reset-filter-btn" @click="clearSearch">
         Reset
@@ -82,7 +82,11 @@
       </ul>
     </div>
 
-    <form class="sitta-progress-form" @submit.prevent="addProgress">
+    <form
+      id="sitta-progress-form"
+      class="sitta-progress-form"
+      @submit.prevent="addProgress"
+    >
       <label>Tambah Progress Perjalanan</label>
       <div class="sitta-search-form">
         <input
@@ -216,9 +220,17 @@
             <td>{{ item.paket }}</td>
             <td>{{ $filters.date(item.tanggalKirim) }}</td>
             <td>{{ item.status }}</td>
-            <td>
+            <td class="tracking-actions">
               <button class="edit" type="button" @click="showDetail(nomor)">
                 <i class="fa fa-eye"></i> Detail
+              </button>
+
+              <button
+                class="tracking-progress-btn"
+                type="button"
+                @click="showProgressForm(nomor)"
+              >
+                <i class="fa fa-plus-circle"></i> Tambah Progress
               </button>
             </td>
           </tr>
